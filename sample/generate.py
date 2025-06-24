@@ -54,7 +54,7 @@ def main(args=None):
         assert os.path.exists(args.input_text)
         with open(args.input_text, 'r') as fr:
             texts = fr.readlines()
-        texts = [s.replace('\n', '') for s in texts]
+        texts = [s.replace('\n', '') for s in texts] # [:args.num_samples]
         args.num_samples = len(texts)
     elif args.dynamic_text_path != '':
         assert os.path.exists(args.dynamic_text_path)
@@ -278,7 +278,7 @@ def save_multiple_samples(out_path, file_templates,  animations, fps, max_frames
             # close internal clips. Does nothing but better use in case one day it will do something
             clip.close()
         clips.close()  # important
- 
+
 
 def construct_template_variables(unconstrained):
     row_file_template = 'sample{:02d}.mp4'

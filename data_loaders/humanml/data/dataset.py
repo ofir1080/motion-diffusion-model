@@ -6,7 +6,7 @@ from os.path import join as pjoin
 import random
 import codecs as cs
 from tqdm import tqdm
-import spacy
+# import spacy
 
 from torch.utils.data._utils.collate import default_collate
 from data_loaders.humanml.utils.word_vectorizer import WordVectorizer
@@ -228,7 +228,7 @@ class Text2MotionDatasetV2(data.Dataset):
         _split = os.path.basename(split_file).replace('.txt', '')
         _name =''
         # cache_path = os.path.join(opt.meta_dir, self.opt.dataset_name + '_' + _split + _name + '.npy')
-        cache_path = os.path.join(opt.cache_dir, 'dataset', self.opt.dataset_name + '_' + _split + _name + '.npy')
+        cache_path = os.path.join(opt.cache_dir, str.upper(self.opt.dataset_name), self.opt.dataset_name + '_' + _split + _name + '.npy')
         if opt.use_cache and os.path.exists(cache_path):
             print(f'Loading motions from cache file [{cache_path}]...')
             _cache = np.load(cache_path, allow_pickle=True)[None][0]
@@ -751,26 +751,26 @@ class TextOnlyDataset(data.Dataset):
 
 # A wrapper class for t2m original dataset for MDM purposes
 class HumanML3D(data.Dataset):
-    def __init__(self, mode, datapath='./dataset/humanml_opt.txt', split="train", **kwargs):
+    def __init__(self, mode, datapath='data/HumanML3D', split="train", **kwargs):
         self.mode = mode
 
         self.dataset_name = 't2m'
         self.dataname = 't2m'
 
         # Configurations of T2M dataset and KIT dataset is almost the same
-        abs_base_path = kwargs.get('abs_path', '.')
-        dataset_opt_path = pjoin(abs_base_path, datapath)
+        abs_base_path = kwargs.get('abs_path', '')
+        dataset_opt_path = pjoin(abs_base_path, datapath, 'humanml_opt.txt')
         device = kwargs.get('device', None)
         opt = get_opt(dataset_opt_path, device)
         # opt.meta_dir = pjoin(abs_base_path, opt.meta_dir)
-        opt.cache_dir = kwargs.get('cache_path', '.')
+        opt.cache_dir = kwargs.get('cache_path', './data')
         opt.motion_dir = pjoin(abs_base_path, opt.motion_dir)
         opt.text_dir = pjoin(abs_base_path, opt.text_dir)
         opt.model_dir = pjoin(abs_base_path, opt.model_dir)
         opt.checkpoints_dir = pjoin(abs_base_path, opt.checkpoints_dir)
         opt.data_root = pjoin(abs_base_path, opt.data_root)
         opt.save_root = pjoin(abs_base_path, opt.save_root)
-        opt.meta_dir = pjoin(abs_base_path, './dataset')
+        opt.meta_dir = pjoin(abs_base_path, 'data', 'metadata')
         opt.use_cache = kwargs.get('use_cache', True)
         opt.fixed_len = kwargs.get('fixed_len', 0)
         if opt.fixed_len > 0:

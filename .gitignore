@@ -138,3 +138,9 @@ slurm**/
 *.err
 *.slurm
 .vscode/
+
+
+models_to_upload/*
+*zip
+*rar
+*npy

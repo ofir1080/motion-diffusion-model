@@ -9,7 +9,25 @@ import mpl_toolkits.mplot3d.axes3d as p3
 # import cv2
 from textwrap import wrap
 from moviepy.editor import VideoClip
-from moviepy.video.io.bindings import mplfig_to_npimage
+# from moviepy.video.io.bindings import mplfig_to_npimage
+from moviepy import *
+
+
+def mplfig_to_npimage(fig):
+    """ Converts a matplotlib figure to a RGB frame after updating the canvas"""
+    from matplotlib.backends.backend_agg import FigureCanvasAgg
+    canvas = FigureCanvasAgg(fig)
+    canvas.draw() # update/draw the elements
+
+    # get the width and the height to resize the matrix
+    l,b,w,h = canvas.figure.bbox.bounds
+    w, h = int(w), int(h)
+
+    #  exports the canvas to a memory view and then to a numpy nd.array
+    mem_view = canvas.buffer_rgba()  # Update to Matplotlib 3.8
+    image = np.asarray(mem_view)
+    return image[:, :, :3]  # Return only RGB, not alpha.
+
 
 def list_cut_average(ll, intervals):
     if intervals == 1:
@@ -73,6 +91,7 @@ def plot_3d_motion(save_path, kinematic_tree, joints, title, dataset, figsize=(3
     plt.tight_layout()
     ax = p3.Axes3D(fig)
     init()
+    
     MINS = data.min(axis=0).min(axis=0)
     MAXS = data.max(axis=0).max(axis=0)
     colors_blue = ["#4D84AA", "#5B9965", "#61CEB9", "#34C1E2", "#80B79A"]  # GT color
@@ -138,7 +157,6 @@ def plot_3d_motion(save_path, kinematic_tree, joints, title, dataset, figsize=(3
         ax.set_xticks([])
         ax.set_yticks([])
         ax.set_zticks([])
-
 
         return mplfig_to_npimage(fig)
 

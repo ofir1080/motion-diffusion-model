@@ -1,0 +1,675 @@
+creating data loader...
+Reading ./data/HumanML3D/humanml_opt.txt
+Loading dataset t2m ...
+Loading motions from cache file [./data/T2M/t2m_train.npy]...
+Pointer Pointing at 0
+creating model and diffusion...
+TRANS_DEC init
+EMBED TEXT
+Loading BERT...
+Total params: 26.42M
+Training...
+Running 318 epochs
+Logging to /tmp/openai-2025-06-23-20-52-32-138088
+loading model from checkpoint: save/my_humanml_trans_dec_bert_512/model000000000.pt...
+loading both model and model_avg
+train steps: 20000
+Starting epoch 0
+Starting epoch 1
+Starting epoch 2
+Starting epoch 3
+Starting epoch 4
+Starting epoch 5
+Starting epoch 6
+Starting epoch 7
+Starting epoch 8
+Starting epoch 9
+Starting epoch 10
+Starting epoch 11
+Starting epoch 12
+Starting epoch 13
+Starting epoch 14
+Starting epoch 15
+-------------------------
+| grad_norm  | 0.316    |
+| loss       | 0.338    |
+| loss_q0    | 0.257    |
+| loss_q1    | 0.263    |
+| loss_q2    | 0.288    |
+| loss_q3    | 0.554    |
+| param_norm | 454      |
+| rot_mse    | 0.338    |
+| rot_mse_q0 | 0.257    |
+| rot_mse_q1 | 0.263    |
+| rot_mse_q2 | 0.288    |
+| rot_mse_q3 | 0.554    |
+| samples    | 3.84e+05 |
+| step       | 1e+03    |
+-------------------------
+step[1000]: loss[0.33778]
+Starting epoch 16
+Starting epoch 17
+Starting epoch 18
+Starting epoch 19
+Starting epoch 20
+Starting epoch 21
+Starting epoch 22
+Starting epoch 23
+Starting epoch 24
+Starting epoch 25
+Starting epoch 26
+Starting epoch 27
+Starting epoch 28
+Starting epoch 29
+Starting epoch 30
+Starting epoch 31
+-------------------------
+| grad_norm  | 0.233    |
+| loss       | 0.177    |
+| loss_q0    | 0.0979   |
+| loss_q1    | 0.104    |
+| loss_q2    | 0.129    |
+| loss_q3    | 0.387    |
+| param_norm | 455      |
+| rot_mse    | 0.177    |
+| rot_mse_q0 | 0.0979   |
+| rot_mse_q1 | 0.104    |
+| rot_mse_q2 | 0.129    |
+| rot_mse_q3 | 0.387    |
+| samples    | 7.68e+05 |
+| step       | 2e+03    |
+-------------------------
+step[2000]: loss[0.17718]
+Starting epoch 32
+Starting epoch 33
+Starting epoch 34
+Starting epoch 35
+Starting epoch 36
+Starting epoch 37
+Starting epoch 38
+Starting epoch 39
+Starting epoch 40
+Starting epoch 41
+Starting epoch 42
+Starting epoch 43
+Starting epoch 44
+Starting epoch 45
+Starting epoch 46
+Starting epoch 47
+-------------------------
+| grad_norm  | 0.195    |
+| loss       | 0.147    |
+| loss_q0    | 0.072    |
+| loss_q1    | 0.0779   |
+| loss_q2    | 0.101    |
+| loss_q3    | 0.347    |
+| param_norm | 456      |
+| rot_mse    | 0.147    |
+| rot_mse_q0 | 0.072    |
+| rot_mse_q1 | 0.0779   |
+| rot_mse_q2 | 0.101    |
+| rot_mse_q3 | 0.347    |
+| samples    | 1.15e+06 |
+| step       | 3e+03    |
+-------------------------
+step[3000]: loss[0.14694]
+Starting epoch 48
+Starting epoch 49
+Starting epoch 50
+Starting epoch 51
+Starting epoch 52
+Starting epoch 53
+Starting epoch 54
+Starting epoch 55
+Starting epoch 56
+Starting epoch 57
+Starting epoch 58
+Starting epoch 59
+Starting epoch 60
+Starting epoch 61
+Starting epoch 62
+Starting epoch 63
+-------------------------
+| grad_norm  | 0.171    |
+| loss       | 0.133    |
+| loss_q0    | 0.0597   |
+| loss_q1    | 0.0656   |
+| loss_q2    | 0.0876   |
+| loss_q3    | 0.327    |
+| param_norm | 456      |
+| rot_mse    | 0.133    |
+| rot_mse_q0 | 0.0597   |
+| rot_mse_q1 | 0.0656   |
+| rot_mse_q2 | 0.0876   |
+| rot_mse_q3 | 0.327    |
+| samples    | 1.54e+06 |
+| step       | 4e+03    |
+-------------------------
+step[4000]: loss[0.13259]
+Starting epoch 64
+Starting epoch 65
+Starting epoch 66
+Starting epoch 67
+Starting epoch 68
+Starting epoch 69
+Starting epoch 70
+Starting epoch 71
+Starting epoch 72
+Starting epoch 73
+Starting epoch 74
+Starting epoch 75
+Starting epoch 76
+Starting epoch 77
+Starting epoch 78
+Starting epoch 79
+-------------------------
+| grad_norm  | 0.163    |
+| loss       | 0.124    |
+| loss_q0    | 0.0524   |
+| loss_q1    | 0.0578   |
+| loss_q2    | 0.0802   |
+| loss_q3    | 0.316    |
+| param_norm | 457      |
+| rot_mse    | 0.124    |
+| rot_mse_q0 | 0.0524   |
+| rot_mse_q1 | 0.0578   |
+| rot_mse_q2 | 0.0802   |
+| rot_mse_q3 | 0.316    |
+| samples    | 1.92e+06 |
+| step       | 5e+03    |
+-------------------------
+step[5000]: loss[0.12432]
+Starting epoch 80
+Starting epoch 81
+Starting epoch 82
+Starting epoch 83
+Starting epoch 84
+Starting epoch 85
+Starting epoch 86
+Starting epoch 87
+Starting epoch 88
+Starting epoch 89
+Starting epoch 90
+Starting epoch 91
+Starting epoch 92
+Starting epoch 93
+Starting epoch 94
+Starting epoch 95
+-------------------------
+| grad_norm  | 0.149    |
+| loss       | 0.118    |
+| loss_q0    | 0.0472   |
+| loss_q1    | 0.0531   |
+| loss_q2    | 0.0744   |
+| loss_q3    | 0.305    |
+| param_norm | 457      |
+| rot_mse    | 0.118    |
+| rot_mse_q0 | 0.0472   |
+| rot_mse_q1 | 0.0531   |
+| rot_mse_q2 | 0.0744   |
+| rot_mse_q3 | 0.305    |
+| samples    | 2.3e+06  |
+| step       | 6e+03    |
+-------------------------
+step[6000]: loss[0.11756]
+Starting epoch 96
+Starting epoch 97
+Starting epoch 98
+Starting epoch 99
+Starting epoch 100
+Starting epoch 101
+Starting epoch 102
+Starting epoch 103
+Starting epoch 104
+Starting epoch 105
+Starting epoch 106
+Starting epoch 107
+Starting epoch 108
+Starting epoch 109
+Starting epoch 110
+Starting epoch 111
+-------------------------
+| grad_norm  | 0.141    |
+| loss       | 0.112    |
+| loss_q0    | 0.0441   |
+| loss_q1    | 0.0496   |
+| loss_q2    | 0.0698   |
+| loss_q3    | 0.295    |
+| param_norm | 457      |
+| rot_mse    | 0.112    |
+| rot_mse_q0 | 0.0441   |
+| rot_mse_q1 | 0.0496   |
+| rot_mse_q2 | 0.0698   |
+| rot_mse_q3 | 0.295    |
+| samples    | 2.69e+06 |
+| step       | 7e+03    |
+-------------------------
+step[7000]: loss[0.11245]
+Starting epoch 112
+Starting epoch 113
+Starting epoch 114
+Starting epoch 115
+Starting epoch 116
+Starting epoch 117
+Starting epoch 118
+Starting epoch 119
+Starting epoch 120
+Starting epoch 121
+Starting epoch 122
+Starting epoch 123
+Starting epoch 124
+Starting epoch 125
+Starting epoch 126
+-------------------------
+| grad_norm  | 0.133    |
+| loss       | 0.108    |
+| loss_q0    | 0.0407   |
+| loss_q1    | 0.0466   |
+| loss_q2    | 0.0674   |
+| loss_q3    | 0.287    |
+| param_norm | 458      |
+| rot_mse    | 0.108    |
+| rot_mse_q0 | 0.0407   |
+| rot_mse_q1 | 0.0466   |
+| rot_mse_q2 | 0.0674   |
+| rot_mse_q3 | 0.287    |
+| samples    | 3.07e+06 |
+| step       | 8e+03    |
+-------------------------
+step[8000]: loss[0.10808]
+Starting epoch 127
+Starting epoch 128
+Starting epoch 129
+Starting epoch 130
+Starting epoch 131
+Starting epoch 132
+Starting epoch 133
+Starting epoch 134
+Starting epoch 135
+Starting epoch 136
+Starting epoch 137
+Starting epoch 138
+Starting epoch 139
+Starting epoch 140
+Starting epoch 141
+Starting epoch 142
+-------------------------
+| grad_norm  | 0.125    |
+| loss       | 0.105    |
+| loss_q0    | 0.0387   |
+| loss_q1    | 0.0441   |
+| loss_q2    | 0.0645   |
+| loss_q3    | 0.281    |
+| param_norm | 458      |
+| rot_mse    | 0.105    |
+| rot_mse_q0 | 0.0387   |
+| rot_mse_q1 | 0.0441   |
+| rot_mse_q2 | 0.0645   |
+| rot_mse_q3 | 0.281    |
+| samples    | 3.46e+06 |
+| step       | 9e+03    |
+-------------------------
+step[9000]: loss[0.10464]
+Starting epoch 143
+Starting epoch 144
+Starting epoch 145
+Starting epoch 146
+Starting epoch 147
+Starting epoch 148
+Starting epoch 149
+Starting epoch 150
+Starting epoch 151
+Starting epoch 152
+Starting epoch 153
+Starting epoch 154
+Starting epoch 155
+Starting epoch 156
+Starting epoch 157
+Starting epoch 158
+-------------------------
+| grad_norm  | 0.127    |
+| loss       | 0.103    |
+| loss_q0    | 0.0367   |
+| loss_q1    | 0.0425   |
+| loss_q2    | 0.062    |
+| loss_q3    | 0.277    |
+| param_norm | 459      |
+| rot_mse    | 0.103    |
+| rot_mse_q0 | 0.0367   |
+| rot_mse_q1 | 0.0425   |
+| rot_mse_q2 | 0.062    |
+| rot_mse_q3 | 0.277    |
+| samples    | 3.84e+06 |
+| step       | 1e+04    |
+-------------------------
+step[10000]: loss[0.10255]
+Starting epoch 159
+Starting epoch 160
+Starting epoch 161
+Starting epoch 162
+Starting epoch 163
+Starting epoch 164
+Starting epoch 165
+Starting epoch 166
+Starting epoch 167
+Starting epoch 168
+Starting epoch 169
+Starting epoch 170
+Starting epoch 171
+Starting epoch 172
+Starting epoch 173
+Starting epoch 174
+-------------------------
+| grad_norm  | 0.12     |
+| loss       | 0.0997   |
+| loss_q0    | 0.0351   |
+| loss_q1    | 0.0408   |
+| loss_q2    | 0.0602   |
+| loss_q3    | 0.271    |
+| param_norm | 459      |
+| rot_mse    | 0.0997   |
+| rot_mse_q0 | 0.0351   |
+| rot_mse_q1 | 0.0408   |
+| rot_mse_q2 | 0.0602   |
+| rot_mse_q3 | 0.271    |
+| samples    | 4.22e+06 |
+| step       | 1.1e+04  |
+-------------------------
+step[11000]: loss[0.09970]
+Starting epoch 175
+Starting epoch 176
+Starting epoch 177
+Starting epoch 178
+Starting epoch 179
+Starting epoch 180
+Starting epoch 181
+Starting epoch 182
+Starting epoch 183
+Starting epoch 184
+Starting epoch 185
+Starting epoch 186
+Starting epoch 187
+Starting epoch 188
+Starting epoch 189
+Starting epoch 190
+-------------------------
+| grad_norm  | 0.119    |
+| loss       | 0.0982   |
+| loss_q0    | 0.0337   |
+| loss_q1    | 0.0394   |
+| loss_q2    | 0.0586   |
+| loss_q3    | 0.269    |
+| param_norm | 459      |
+| rot_mse    | 0.0982   |
+| rot_mse_q0 | 0.0337   |
+| rot_mse_q1 | 0.0394   |
+| rot_mse_q2 | 0.0586   |
+| rot_mse_q3 | 0.269    |
+| samples    | 4.61e+06 |
+| step       | 1.2e+04  |
+-------------------------
+step[12000]: loss[0.09821]
+Starting epoch 191
+Starting epoch 192
+Starting epoch 193
+Starting epoch 194
+Starting epoch 195
+Starting epoch 196
+Starting epoch 197
+Starting epoch 198
+Starting epoch 199
+Starting epoch 200
+Starting epoch 201
+Starting epoch 202
+Starting epoch 203
+Starting epoch 204
+Starting epoch 205
+Starting epoch 206
+-------------------------
+| grad_norm  | 0.112    |
+| loss       | 0.0957   |
+| loss_q0    | 0.0327   |
+| loss_q1    | 0.0382   |
+| loss_q2    | 0.0572   |
+| loss_q3    | 0.264    |
+| param_norm | 460      |
+| rot_mse    | 0.0957   |
+| rot_mse_q0 | 0.0327   |
+| rot_mse_q1 | 0.0382   |
+| rot_mse_q2 | 0.0572   |
+| rot_mse_q3 | 0.264    |
+| samples    | 4.99e+06 |
+| step       | 1.3e+04  |
+-------------------------
+step[13000]: loss[0.09569]
+Starting epoch 207
+Starting epoch 208
+Starting epoch 209
+Starting epoch 210
+Starting epoch 211
+Starting epoch 212
+Starting epoch 213
+Starting epoch 214
+Starting epoch 215
+Starting epoch 216
+Starting epoch 217
+Starting epoch 218
+Starting epoch 219
+Starting epoch 220
+Starting epoch 221
+Starting epoch 222
+-------------------------
+| grad_norm  | 0.113    |
+| loss       | 0.0942   |
+| loss_q0    | 0.0315   |
+| loss_q1    | 0.0374   |
+| loss_q2    | 0.0558   |
+| loss_q3    | 0.261    |
+| param_norm | 460      |
+| rot_mse    | 0.0942   |
+| rot_mse_q0 | 0.0315   |
+| rot_mse_q1 | 0.0374   |
+| rot_mse_q2 | 0.0558   |
+| rot_mse_q3 | 0.261    |
+| samples    | 5.38e+06 |
+| step       | 1.4e+04  |
+-------------------------
+step[14000]: loss[0.09423]
+Starting epoch 223
+Starting epoch 224
+Starting epoch 225
+Starting epoch 226
+Starting epoch 227
+Starting epoch 228
+Starting epoch 229
+Starting epoch 230
+Starting epoch 231
+Starting epoch 232
+Starting epoch 233
+Starting epoch 234
+Starting epoch 235
+Starting epoch 236
+Starting epoch 237
+Starting epoch 238
+-------------------------
+| grad_norm  | 0.108    |
+| loss       | 0.0927   |
+| loss_q0    | 0.0306   |
+| loss_q1    | 0.0361   |
+| loss_q2    | 0.0548   |
+| loss_q3    | 0.258    |
+| param_norm | 460      |
+| rot_mse    | 0.0927   |
+| rot_mse_q0 | 0.0306   |
+| rot_mse_q1 | 0.0361   |
+| rot_mse_q2 | 0.0548   |
+| rot_mse_q3 | 0.258    |
+| samples    | 5.76e+06 |
+| step       | 1.5e+04  |
+-------------------------
+step[15000]: loss[0.09271]
+Starting epoch 239
+Starting epoch 240
+Starting epoch 241
+Starting epoch 242
+Starting epoch 243
+Starting epoch 244
+Starting epoch 245
+Starting epoch 246
+Starting epoch 247
+Starting epoch 248
+Starting epoch 249
+Starting epoch 250
+Starting epoch 251
+Starting epoch 252
+Starting epoch 253
+-------------------------
+| grad_norm  | 0.106    |
+| loss       | 0.0911   |
+| loss_q0    | 0.0298   |
+| loss_q1    | 0.0353   |
+| loss_q2    | 0.0539   |
+| loss_q3    | 0.253    |
+| param_norm | 461      |
+| rot_mse    | 0.0911   |
+| rot_mse_q0 | 0.0298   |
+| rot_mse_q1 | 0.0353   |
+| rot_mse_q2 | 0.0539   |
+| rot_mse_q3 | 0.253    |
+| samples    | 6.14e+06 |
+| step       | 1.6e+04  |
+-------------------------
+step[16000]: loss[0.09111]
+Starting epoch 254
+Starting epoch 255
+Starting epoch 256
+Starting epoch 257
+Starting epoch 258
+Starting epoch 259
+Starting epoch 260
+Starting epoch 261
+Starting epoch 262
+Starting epoch 263
+Starting epoch 264
+Starting epoch 265
+Starting epoch 266
+Starting epoch 267
+Starting epoch 268
+Starting epoch 269
+-------------------------
+| grad_norm  | 0.104    |
+| loss       | 0.0903   |
+| loss_q0    | 0.0292   |
+| loss_q1    | 0.0345   |
+| loss_q2    | 0.0529   |
+| loss_q3    | 0.253    |
+| param_norm | 461      |
+| rot_mse    | 0.0903   |
+| rot_mse_q0 | 0.0292   |
+| rot_mse_q1 | 0.0345   |
+| rot_mse_q2 | 0.0529   |
+| rot_mse_q3 | 0.253    |
+| samples    | 6.53e+06 |
+| step       | 1.7e+04  |
+-------------------------
+step[17000]: loss[0.09033]
+Starting epoch 270
+Starting epoch 271
+Starting epoch 272
+Starting epoch 273
+Starting epoch 274
+Starting epoch 275
+Starting epoch 276
+Starting epoch 277
+Starting epoch 278
+Starting epoch 279
+Starting epoch 280
+Starting epoch 281
+Starting epoch 282
+Starting epoch 283
+Starting epoch 284
+Starting epoch 285
+-------------------------
+| grad_norm  | 0.107    |
+| loss       | 0.0903   |
+| loss_q0    | 0.0285   |
+| loss_q1    | 0.0339   |
+| loss_q2    | 0.0521   |
+| loss_q3    | 0.254    |
+| param_norm | 461      |
+| rot_mse    | 0.0903   |
+| rot_mse_q0 | 0.0285   |
+| rot_mse_q1 | 0.0339   |
+| rot_mse_q2 | 0.0521   |
+| rot_mse_q3 | 0.254    |
+| samples    | 6.91e+06 |
+| step       | 1.8e+04  |
+-------------------------
+step[18000]: loss[0.09025]
+Starting epoch 286
+Starting epoch 287
+Starting epoch 288
+Starting epoch 289
+Starting epoch 290
+Starting epoch 291
+Starting epoch 292
+Starting epoch 293
+Starting epoch 294
+Starting epoch 295
+Starting epoch 296
+Starting epoch 297
+Starting epoch 298
+Starting epoch 299
+Starting epoch 300
+Starting epoch 301
+-------------------------
+| grad_norm  | 0.103    |
+| loss       | 0.0879   |
+| loss_q0    | 0.0278   |
+| loss_q1    | 0.0333   |
+| loss_q2    | 0.0515   |
+| loss_q3    | 0.247    |
+| param_norm | 462      |
+| rot_mse    | 0.0879   |
+| rot_mse_q0 | 0.0278   |
+| rot_mse_q1 | 0.0333   |
+| rot_mse_q2 | 0.0515   |
+| rot_mse_q3 | 0.247    |
+| samples    | 7.3e+06  |
+| step       | 1.9e+04  |
+-------------------------
+step[19000]: loss[0.08793]
+Starting epoch 302
+Starting epoch 303
+Starting epoch 304
+Starting epoch 305
+Starting epoch 306
+Starting epoch 307
+Starting epoch 308
+Starting epoch 309
+Starting epoch 310
+Starting epoch 311
+Starting epoch 312
+Starting epoch 313
+Starting epoch 314
+Starting epoch 315
+Starting epoch 316
+Starting epoch 317
+-------------------------
+| grad_norm  | 0.104    |
+| loss       | 0.0876   |
+| loss_q0    | 0.0274   |
+| loss_q1    | 0.0328   |
+| loss_q2    | 0.0508   |
+| loss_q3    | 0.247    |
+| param_norm | 462      |
+| rot_mse    | 0.0876   |
+| rot_mse_q0 | 0.0274   |
+| rot_mse_q1 | 0.0328   |
+| rot_mse_q2 | 0.0508   |
+| rot_mse_q3 | 0.247    |
+| samples    | 7.68e+06 |
+| step       | 2e+04    |
+-------------------------
+step[20000]: loss[0.08758]
+saving model...
